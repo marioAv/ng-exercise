@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService} from '../../app/core/services/users.service'
 import { User } from '../core/models/user.model';
-import {ActivatedRoute} from '@angular/router'
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'ng-e-users-list',
@@ -11,7 +9,7 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 })
 export class UsersListComponent implements OnInit {
 
-  users:User[] = [];
+  users:User[];
 
   constructor(
     public usersService: UsersService,
