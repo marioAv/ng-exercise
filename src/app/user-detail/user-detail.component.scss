@@ -1,0 +1,34 @@
+.user-container{
+    padding:20px 0px 0px ;
+    display: grid;
+    grid-template-columns:auto;
+    grid-gap: 20px;
+    width:90%;
+    margin:auto;
+    margin-top:40px;
+    max-width: 500px;
+    text-align:center;
+    border:1px solid gainsboro;
+    border-radius:5px;
+
+        h1{
+            color:#663FB4;
+        }
+
+        .info{
+            text-align:left;
+        }
+        img{
+            border-radius:50%;
+        }
+        button{
+            background: #663FB4;
+            padding:20px;
+            font-size:18px;
+            color:white;
+            border:none;
+            width:100%;
+            grid-column: span 2;
+            cursor: pointer;
+        }
+}

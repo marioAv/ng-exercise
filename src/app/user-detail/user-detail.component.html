@@ -1,0 +1,18 @@
+<div *ngIf="currentUser" class="user-container"> 
+  <div>
+      <img [src]="currentUser.avatar">
+  </div>
+
+  <div class="info">
+      <h1>{{currentUser.first_name }} {{currentUser.last_name }}</h1>
+      <p>Email: {{currentUser.email}}</p>
+  </div>
+  <button routerLink='/users'>Go Back to users</button>
+</div>
+
+
+
+<div *ngIf="userNotFound">
+  <h1>Requested User was not found</h1>
+  <button routerLink='/users'> Go back to Users </button>
+</div>

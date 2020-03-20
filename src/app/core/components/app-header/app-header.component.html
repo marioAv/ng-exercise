@@ -1,18 +1,18 @@
 <div class="app-header">
   <div class="logo" routerLink="/">
-    <img alt="Modus Logo" src="assets/images/favicon-196x196.png" />
+    <img alt="Modus Logo" src="assets/images/favicon-196x196.png">
   </div>
   <div class="title" routerLink="/">Modus Create</div>
-  <div class="profile-dropdown" *ngIf="isLoggedIn">
+  <div class="profile-dropdown" *ngIf="loginService.isLoggedIn">
     <div class="initials">
-      {{ user.firstName.charAt(0) }}{{ user.lastName.charAt(0) }}
+      {{user.first_name.charAt(0)}}{{user.last_name.charAt(0)}}
     </div>
   </div>
-  <div class="action-btns" *ngIf="!isLoggedIn">
+  <div class="action-btns" *ngIf="!loginService.isLoggedIn">
     <button class="app-btn login-btn" (click)="login()">Login</button>
     <button class="app-btn signup-btn" (click)="signup()">Signup</button>
   </div>
-  <div class="action-btns" *ngIf="isLoggedIn">
+  <div class="action-btns" *ngIf="loginService.isLoggedIn">
     <button class="app-btn logout-btn" (click)="logout()">Logout</button>
   </div>
 </div>

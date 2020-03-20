@@ -1,0 +1,23 @@
+h1{
+    text-align:center;
+}
+
+.list-item{
+    border:1px solid gainsboro;
+    padding:10px;
+    list-style: none;
+    border-radius:5px;
+    width:90%;
+    margin:auto;
+    max-width:400px;
+    cursor: pointer;
+    
+            h1{
+                color:#663FB4;
+                text-align:left;
+            }
+}
+
+.list-item:hover{
+    background-color: gainsboro;
+}
